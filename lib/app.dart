@@ -62,7 +62,7 @@ class _AppState extends State<App> {
                 elevation: 12,
                 hslColor: const HSLColor.fromAHSL(1.0, 356, .7, 0.4),
                 shadow: BoxShadow(
-                  color: Colors.grey.withOpacity(0.3),
+                  color: Colors.grey.withValues(alpha: 0.3),
                   spreadRadius: 5,
                   blurRadius: 7,
                   offset: const Offset(0, 2),
@@ -109,8 +109,9 @@ class _AppState extends State<App> {
             icon: const Icon(Icons.image),
           ),
           ActionButton(
-            onPressed: () => Share.share(
-                'Check out my app https://play.google.com/store/apps/details?id=com.davidegironi.sadtrombonebutton'),
+            onPressed: () => SharePlus.instance.share(ShareParams(
+                text:
+                    'Check out my app https://play.google.com/store/apps/details?id=com.davidegironi.sadtrombonebutton')),
             icon: const Icon(Icons.share),
           ),
           ActionButton(

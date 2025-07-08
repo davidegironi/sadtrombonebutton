@@ -1,0 +1,8 @@
+{
+  "search.exclude": {
+    "**/android": true
+  },
+  "files.watcherExclude": {
+    "**/android/**": true
+  }
+}

@@ -1,4 +1,5 @@
 /// Reference https://github.com/bizz84/pushable_button
+library;
 
 import 'package:flutter/material.dart';
 

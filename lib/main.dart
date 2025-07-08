@@ -16,6 +16,5 @@ void main() {
         backgroundColor: Color(0xFFFFDB8B),
       ),
     ),
-    debugShowCheckedModeBanner: false,
   ));
 }
